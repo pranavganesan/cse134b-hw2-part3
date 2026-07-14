@@ -1,0 +1,32 @@
+/*
+  Part 3 carries over the Part 2 rule: no styling beyond a border to
+  establish base page structure (border / border-width are exempt from that
+  limit). The one additional, explicitly-allowed exception here is adjusting
+  the WIDTH of individual columns in Table 1 (see README point 6), so that
+  exception is isolated to its own block below.
+*/
+
+header,
+search,
+form,
+fieldset,
+section,
+article,
+aside,
+figure,
+table,
+details,
+blockquote,
+dl,
+pre {
+  border: 1px solid #444444;
+}
+
+/* Explicitly permitted exception (README point 6): column widths for
+   Table 1 only. No other table styling is applied. */
+#productivity-table col.metric-col {
+  width: 22%;
+}
+#productivity-table col.data-col {
+  width: 18%;
+}
